@@ -36,7 +36,7 @@ function updateButton() {
 
 async function connectWebsite() {
   const chainId = await window.ethereum.request({ method: 'eth_chainId' });
-  if(chainId != '0x5') {
+  if(chainId != '0x13881') {
     await window.ethereum.request({
       method: 'wallet_switchEthereumChain',
       params: [{ chainId: '0x5' }],
