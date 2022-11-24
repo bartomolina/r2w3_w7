@@ -39,7 +39,7 @@ async function connectWebsite() {
   if(chainId != '0x13881') {
     await window.ethereum.request({
       method: 'wallet_switchEthereumChain',
-      params: [{ chainId: '0x5' }],
+      params: [{ chainId: '0x13881' }],
     })
   }
 
